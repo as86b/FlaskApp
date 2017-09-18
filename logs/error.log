@@ -1,0 +1,267 @@
+[Fri Sep 15 19:34:16.516427 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868] [2017-09-15 19:34:16,515] ERROR in app: Exception on / [GET]
+[Fri Sep 15 19:34:16.516455 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868] Traceback (most recent call last):
+[Fri Sep 15 19:34:16.516458 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 19:34:16.516460 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]     response = self.full_dispatch_request()
+[Fri Sep 15 19:34:16.516462 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 19:34:16.516464 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]     rv = self.handle_user_exception(e)
+[Fri Sep 15 19:34:16.516465 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 19:34:16.516467 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 19:34:16.516469 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 19:34:16.516470 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]     rv = self.dispatch_request()
+[Fri Sep 15 19:34:16.516472 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 19:34:16.516474 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 19:34:16.516476 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 19:34:16.516477 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]     db = get_db()
+[Fri Sep 15 19:34:16.516479 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 19:34:16.516480 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]     g.sqlite_db = connect_db()
+[Fri Sep 15 19:34:16.516482 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 19:34:16.516484 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868]     rv = sqlite3.connect(app.config['DATABASE'])
+[Fri Sep 15 19:34:16.516485 2017] [wsgi:error] [pid 5616] [client 209.54.86.176:62868] OperationalError: unable to open database file
+[Fri Sep 15 20:01:32.198004 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052] [2017-09-15 20:01:32,197] ERROR in app: Exception on / [GET]
+[Fri Sep 15 20:01:32.198033 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052] Traceback (most recent call last):
+[Fri Sep 15 20:01:32.198036 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 20:01:32.198038 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]     response = self.full_dispatch_request()
+[Fri Sep 15 20:01:32.198040 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 20:01:32.198042 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]     rv = self.handle_user_exception(e)
+[Fri Sep 15 20:01:32.198044 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 20:01:32.198046 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 20:01:32.198048 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 20:01:32.198060 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]     rv = self.dispatch_request()
+[Fri Sep 15 20:01:32.198062 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 20:01:32.198064 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 20:01:32.198065 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 20:01:32.198067 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]     db = get_db()
+[Fri Sep 15 20:01:32.198069 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 20:01:32.198070 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]     g.sqlite_db = connect_db()
+[Fri Sep 15 20:01:32.198072 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 20:01:32.198074 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052]     rv = sqlite3.connect(app.config['DATABASE'])
+[Fri Sep 15 20:01:32.198075 2017] [wsgi:error] [pid 5617] [client 209.54.86.176:63052] OperationalError: unable to open database file
+[Fri Sep 15 20:10:23.744994 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062] [2017-09-15 20:10:23,744] ERROR in app: Exception on / [GET]
+[Fri Sep 15 20:10:23.745019 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062] Traceback (most recent call last):
+[Fri Sep 15 20:10:23.745022 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 20:10:23.745025 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]     response = self.full_dispatch_request()
+[Fri Sep 15 20:10:23.745027 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 20:10:23.745030 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]     rv = self.handle_user_exception(e)
+[Fri Sep 15 20:10:23.745032 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 20:10:23.745034 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 20:10:23.745036 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 20:10:23.745038 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]     rv = self.dispatch_request()
+[Fri Sep 15 20:10:23.745040 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 20:10:23.745042 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 20:10:23.745044 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 20:10:23.745046 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]     db = get_db()
+[Fri Sep 15 20:10:23.745047 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 20:10:23.745049 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]     g.sqlite_db = connect_db()
+[Fri Sep 15 20:10:23.745051 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 20:10:23.745053 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062]     rv = sqlite3.connect(app.config['DATABASE'])
+[Fri Sep 15 20:10:23.745062 2017] [wsgi:error] [pid 6048] [client 209.54.86.176:63062] OperationalError: unable to open database file
+[Fri Sep 15 20:29:42.118987 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190] [2017-09-15 20:29:42,118] ERROR in app: Exception on / [GET]
+[Fri Sep 15 20:29:42.119013 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190] Traceback (most recent call last):
+[Fri Sep 15 20:29:42.119016 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 20:29:42.119019 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]     response = self.full_dispatch_request()
+[Fri Sep 15 20:29:42.119021 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 20:29:42.119023 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]     rv = self.handle_user_exception(e)
+[Fri Sep 15 20:29:42.119025 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 20:29:42.119028 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 20:29:42.119030 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 20:29:42.119031 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]     rv = self.dispatch_request()
+[Fri Sep 15 20:29:42.119033 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 20:29:42.119036 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 20:29:42.119037 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 20:29:42.119039 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]     db = get_db()
+[Fri Sep 15 20:29:42.119041 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 20:29:42.119043 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]     g.sqlite_db = connect_db()
+[Fri Sep 15 20:29:42.119045 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 20:29:42.119047 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190]     rv = sqlite3.connect(app.config['DATABASE'])
+[Fri Sep 15 20:29:42.119049 2017] [wsgi:error] [pid 6280] [client 209.54.86.176:63190] OperationalError: unable to open database file
+[Fri Sep 15 20:34:47.846610 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200] [2017-09-15 20:34:47,845] ERROR in app: Exception on / [GET]
+[Fri Sep 15 20:34:47.846637 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200] Traceback (most recent call last):
+[Fri Sep 15 20:34:47.846639 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 20:34:47.846642 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]     response = self.full_dispatch_request()
+[Fri Sep 15 20:34:47.846644 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 20:34:47.846646 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]     rv = self.handle_user_exception(e)
+[Fri Sep 15 20:34:47.846648 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 20:34:47.846650 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 20:34:47.846659 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 20:34:47.846661 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]     rv = self.dispatch_request()
+[Fri Sep 15 20:34:47.846662 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 20:34:47.846664 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 20:34:47.846666 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 20:34:47.846668 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]     db = get_db()
+[Fri Sep 15 20:34:47.846669 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 20:34:47.846671 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]     g.sqlite_db = connect_db()
+[Fri Sep 15 20:34:47.846673 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 20:34:47.846674 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200]     rv = sqlite3.connect(app.config['DATABASE'])
+[Fri Sep 15 20:34:47.846676 2017] [wsgi:error] [pid 6402] [client 209.54.86.176:63200] OperationalError: unable to open database file
+[Fri Sep 15 20:36:03.551741 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216] [2017-09-15 20:36:03,551] ERROR in app: Exception on / [GET]
+[Fri Sep 15 20:36:03.551773 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216] Traceback (most recent call last):
+[Fri Sep 15 20:36:03.551776 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 20:36:03.551778 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]     response = self.full_dispatch_request()
+[Fri Sep 15 20:36:03.551780 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 20:36:03.551782 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]     rv = self.handle_user_exception(e)
+[Fri Sep 15 20:36:03.551784 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 20:36:03.551787 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 20:36:03.551788 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 20:36:03.551790 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]     rv = self.dispatch_request()
+[Fri Sep 15 20:36:03.551792 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 20:36:03.551794 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 20:36:03.551796 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 20:36:03.551798 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]     db = get_db()
+[Fri Sep 15 20:36:03.551800 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 20:36:03.551802 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]     g.sqlite_db = connect_db()
+[Fri Sep 15 20:36:03.551803 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 20:36:03.551813 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216]     rv = sqlite3.connect(app.config['DATABASE'])
+[Fri Sep 15 20:36:03.551815 2017] [wsgi:error] [pid 6406] [client 209.54.86.176:63216] OperationalError: unable to open database file
+[Fri Sep 15 20:55:13.017978 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494] [2017-09-15 20:55:13,017] ERROR in app: Exception on / [GET]
+[Fri Sep 15 20:55:13.018010 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494] Traceback (most recent call last):
+[Fri Sep 15 20:55:13.018013 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 20:55:13.018016 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]     response = self.full_dispatch_request()
+[Fri Sep 15 20:55:13.018018 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 20:55:13.018020 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]     rv = self.handle_user_exception(e)
+[Fri Sep 15 20:55:13.018022 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 20:55:13.018024 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 20:55:13.018026 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 20:55:13.018028 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]     rv = self.dispatch_request()
+[Fri Sep 15 20:55:13.018029 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 20:55:13.018031 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 20:55:13.018033 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 20:55:13.018035 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]     db = get_db()
+[Fri Sep 15 20:55:13.018037 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 20:55:13.018039 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]     g.sqlite_db = connect_db()
+[Fri Sep 15 20:55:13.018041 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 20:55:13.018043 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494]     rv = sqlite3.connect(app.config['DATABASE'])
+[Fri Sep 15 20:55:13.018044 2017] [wsgi:error] [pid 6405] [client 209.54.86.176:64494] OperationalError: unable to open database file
+[Fri Sep 15 20:55:22.136139 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508] [2017-09-15 20:55:22,135] ERROR in app: Exception on / [GET]
+[Fri Sep 15 20:55:22.136165 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508] Traceback (most recent call last):
+[Fri Sep 15 20:55:22.136168 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 20:55:22.136170 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]     response = self.full_dispatch_request()
+[Fri Sep 15 20:55:22.136172 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 20:55:22.136174 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]     rv = self.handle_user_exception(e)
+[Fri Sep 15 20:55:22.136176 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 20:55:22.136186 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 20:55:22.136188 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 20:55:22.136190 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]     rv = self.dispatch_request()
+[Fri Sep 15 20:55:22.136192 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 20:55:22.136194 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 20:55:22.136195 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 20:55:22.136197 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]     db = get_db()
+[Fri Sep 15 20:55:22.136199 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 20:55:22.136200 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]     g.sqlite_db = connect_db()
+[Fri Sep 15 20:55:22.136202 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 20:55:22.136203 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508]     rv = sqlite3.connect(app.config['DATABASE'])
+[Fri Sep 15 20:55:22.136205 2017] [wsgi:error] [pid 6403] [client 209.54.86.176:64508] OperationalError: unable to open database file
+[Fri Sep 15 21:27:50.257251 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862] [2017-09-15 21:27:50,256] ERROR in app: Exception on / [GET]
+[Fri Sep 15 21:27:50.257287 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862] Traceback (most recent call last):
+[Fri Sep 15 21:27:50.257290 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 21:27:50.257293 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]     response = self.full_dispatch_request()
+[Fri Sep 15 21:27:50.257295 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 21:27:50.257297 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]     rv = self.handle_user_exception(e)
+[Fri Sep 15 21:27:50.257299 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 21:27:50.257301 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 21:27:50.257303 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 21:27:50.257304 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]     rv = self.dispatch_request()
+[Fri Sep 15 21:27:50.257306 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 21:27:50.257308 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 21:27:50.257310 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 21:27:50.257312 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]     db = get_db()
+[Fri Sep 15 21:27:50.257313 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 21:27:50.257322 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]     g.sqlite_db = connect_db()
+[Fri Sep 15 21:27:50.257324 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 21:27:50.257326 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862]     rv = sqlite3.connect(app.config['DATABASE'] , timeout=5)
+[Fri Sep 15 21:27:50.257327 2017] [wsgi:error] [pid 6998] [client 209.54.86.176:50862] OperationalError: unable to open database file
+[Fri Sep 15 23:36:17.027674 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417] [2017-09-15 23:36:17,027] ERROR in app: Exception on / [GET]
+[Fri Sep 15 23:36:17.027703 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417] Traceback (most recent call last):
+[Fri Sep 15 23:36:17.027706 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 23:36:17.027708 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]     response = self.full_dispatch_request()
+[Fri Sep 15 23:36:17.027710 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 23:36:17.027713 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]     rv = self.handle_user_exception(e)
+[Fri Sep 15 23:36:17.027715 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 23:36:17.027717 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 23:36:17.027719 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 23:36:17.027721 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]     rv = self.dispatch_request()
+[Fri Sep 15 23:36:17.027722 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 23:36:17.027724 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 23:36:17.027726 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 23:36:17.027728 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]     db = get_db()
+[Fri Sep 15 23:36:17.027730 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 23:36:17.027732 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]     g.sqlite_db = connect_db()
+[Fri Sep 15 23:36:17.027733 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 23:36:17.027735 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417]     rv = sqlite3.connect(app.config['DATABASE'] , timeout=5)
+[Fri Sep 15 23:36:17.027737 2017] [wsgi:error] [pid 7002] [client 209.54.86.176:58417] OperationalError: unable to open database file
+[Fri Sep 15 23:39:33.221439 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596] [2017-09-15 23:39:33,220] ERROR in app: Exception on / [GET]
+[Fri Sep 15 23:39:33.221464 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596] Traceback (most recent call last):
+[Fri Sep 15 23:39:33.221467 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Fri Sep 15 23:39:33.221470 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]     response = self.full_dispatch_request()
+[Fri Sep 15 23:39:33.221472 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Fri Sep 15 23:39:33.221481 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]     rv = self.handle_user_exception(e)
+[Fri Sep 15 23:39:33.221483 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Fri Sep 15 23:39:33.221485 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]     reraise(exc_type, exc_value, tb)
+[Fri Sep 15 23:39:33.221486 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Fri Sep 15 23:39:33.221488 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]     rv = self.dispatch_request()
+[Fri Sep 15 23:39:33.221490 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Fri Sep 15 23:39:33.221491 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]     return self.view_functions[rule.endpoint](**req.view_args)
+[Fri Sep 15 23:39:33.221493 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Fri Sep 15 23:39:33.221495 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]     db = get_db()
+[Fri Sep 15 23:39:33.221496 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Fri Sep 15 23:39:33.221498 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]     g.sqlite_db = connect_db()
+[Fri Sep 15 23:39:33.221500 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Fri Sep 15 23:39:33.221501 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596]     rv = sqlite3.connect(app.config['DATABASE'] , timeout=5)
+[Fri Sep 15 23:39:33.221503 2017] [wsgi:error] [pid 7001] [client 209.54.86.176:58596] OperationalError: unable to open database file
+[Sat Sep 16 10:34:40.938969 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255] [2017-09-16 10:34:40,938] ERROR in app: Exception on / [GET]
+[Sat Sep 16 10:34:40.938997 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255] Traceback (most recent call last):
+[Sat Sep 16 10:34:40.939000 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Sep 16 10:34:40.939002 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]     response = self.full_dispatch_request()
+[Sat Sep 16 10:34:40.939004 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Sep 16 10:34:40.939007 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]     rv = self.handle_user_exception(e)
+[Sat Sep 16 10:34:40.939008 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Sep 16 10:34:40.939011 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]     reraise(exc_type, exc_value, tb)
+[Sat Sep 16 10:34:40.939012 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Sep 16 10:34:40.939014 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]     rv = self.dispatch_request()
+[Sat Sep 16 10:34:40.939016 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Sep 16 10:34:40.939018 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Sep 16 10:34:40.939020 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Sat Sep 16 10:34:40.939021 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]     db = get_db()
+[Sat Sep 16 10:34:40.939031 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Sat Sep 16 10:34:40.939033 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]     g.sqlite_db = connect_db()
+[Sat Sep 16 10:34:40.939034 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Sat Sep 16 10:34:40.939036 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255]     rv = sqlite3.connect(app.config['DATABASE'] , timeout=5)
+[Sat Sep 16 10:34:40.939038 2017] [wsgi:error] [pid 9525] [client 66.102.6.132:33255] OperationalError: unable to open database file
+[Sat Sep 16 19:59:45.522640 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490] [2017-09-16 19:59:45,521] ERROR in app: Exception on / [GET]
+[Sat Sep 16 19:59:45.522662 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490] Traceback (most recent call last):
+[Sat Sep 16 19:59:45.522665 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Sep 16 19:59:45.522667 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]     response = self.full_dispatch_request()
+[Sat Sep 16 19:59:45.522669 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Sep 16 19:59:45.522672 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]     rv = self.handle_user_exception(e)
+[Sat Sep 16 19:59:45.522674 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Sep 16 19:59:45.522676 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]     reraise(exc_type, exc_value, tb)
+[Sat Sep 16 19:59:45.522678 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Sep 16 19:59:45.522680 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]     rv = self.dispatch_request()
+[Sat Sep 16 19:59:45.522682 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Sep 16 19:59:45.522684 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Sep 16 19:59:45.522685 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Sat Sep 16 19:59:45.522687 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]     db = get_db()
+[Sat Sep 16 19:59:45.522689 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Sat Sep 16 19:59:45.522691 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]     g.sqlite_db = connect_db()
+[Sat Sep 16 19:59:45.522692 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Sat Sep 16 19:59:45.522694 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490]     rv = sqlite3.connect(app.config['DATABASE'] , timeout=5)
+[Sat Sep 16 19:59:45.522696 2017] [wsgi:error] [pid 9526] [client 66.102.6.128:53490] OperationalError: unable to open database file
+[Sat Sep 16 21:03:43.143686 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368] [2017-09-16 21:03:43,143] ERROR in app: Exception on / [GET]
+[Sat Sep 16 21:03:43.143713 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368] Traceback (most recent call last):
+[Sat Sep 16 21:03:43.143716 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Sep 16 21:03:43.143719 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]     response = self.full_dispatch_request()
+[Sat Sep 16 21:03:43.143727 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Sep 16 21:03:43.143729 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]     rv = self.handle_user_exception(e)
+[Sat Sep 16 21:03:43.143731 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Sep 16 21:03:43.143733 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]     reraise(exc_type, exc_value, tb)
+[Sat Sep 16 21:03:43.143734 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Sep 16 21:03:43.143736 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]     rv = self.dispatch_request()
+[Sat Sep 16 21:03:43.143738 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Sep 16 21:03:43.143739 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Sep 16 21:03:43.143741 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 52, in show_entries
+[Sat Sep 16 21:03:43.143743 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]     db = get_db()
+[Sat Sep 16 21:03:43.143744 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 29, in get_db
+[Sat Sep 16 21:03:43.143746 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]     g.sqlite_db = connect_db()
+[Sat Sep 16 21:03:43.143747 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]   File "/var/www/FlaskApp/FlaskApp/FlaskApp.py", line 20, in connect_db
+[Sat Sep 16 21:03:43.143749 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368]     rv = sqlite3.connect(app.config['DATABASE'] , timeout=5)
+[Sat Sep 16 21:03:43.143751 2017] [wsgi:error] [pid 9529] [client 209.54.86.176:49368] OperationalError: unable to open database file
+[Sat Sep 16 21:06:37.626246 2017] [authz_core:error] [pid 12129] [client 209.54.86.176:49445] AH01630: client denied by server configuration: /var/www/FlaskApp/flaskapp.wsgi

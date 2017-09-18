@@ -1,0 +1,1 @@
+Putting the logs in this folder instead of using the previously made logs so everything is more compartmentalized in the FlaskApp folder
